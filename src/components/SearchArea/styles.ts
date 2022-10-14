@@ -14,7 +14,7 @@ export const SearchInput = styled.TextInput.attrs({
     placeholder: 'Pesquisar'
 })`
     width: 90%;
-    height: 30px;
+    height: 40px;
     padding-left: 10px;
 
     background-color: ${globalTheme.COLORS.WHITE};
@@ -25,5 +25,5 @@ export const SearchIcon = styled.Image`
     height: 20px;
     position: absolute;
     right: 8%;
-    top: 5%;
+    top: 10%;
 `
