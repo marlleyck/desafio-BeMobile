@@ -10,8 +10,10 @@
     "server": "json-server src/services/db.json -w --host 192.168.0.105 --port 3001"
   },
   "dependencies": {
+    "@expo-google-fonts/roboto": "^0.2.2",
     "axios": "^1.1.2",
     "expo": "~46.0.13",
+    "expo-font": "~10.2.0",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
