@@ -5,70 +5,70 @@
       "name": "Giovana L. Arruda",
       "stack": "Front-end",
       "phone": "84996548874",
-      "image": "../../assets/img/people/Photo-12.png"
+      "image": "https://i.imgur.com/VSgVst0.png"
     },
     {
       "id": 2,
       "name": "Vanessa Machado",
       "stack": "Back-end",
       "phone": "21894458577",
-      "image": "../../assets/img/people/Photo-10.png"
+      "image": "https://i.imgur.com/2P53i2i.png"
     },
     {
       "id": 3,
       "name": "Juliana Borba",
       "stack": "Front-end",
       "phone": "8388563598",
-      "image": "../../assets/img/people/Photo-04.png"
+      "image": "https://i.imgur.com/E0nNTh6.png"
     },
     {
       "id": 4,
       "name": "Josiane Dias",
       "stack": "Back-end",
       "phone": "84998742591",
-      "image": "../../assets/img/people/Photo-08.png"
+      "image": "https://i.imgur.com/miULDcf.png"
     },
     {
       "id": 5,
       "name": "Reginaldo Felipe",
       "stack": "Back-end",
       "phone": "11994549875",
-      "image": "../../assets/img/people/Photo-07.png"
+      "image": "https://i.imgur.com/Jj4mhBe.png"
     },
     {
       "id": 6,
       "name": "Grabriel D.",
       "stack": "Front-end",
       "phone": "21996211159",
-      "image": "../../assets/img/people/Photo-06.png"
+      "image": "https://i.imgur.com/gQwyvaV.png"
     },
     {
       "id": 7,
       "name": "Silvio de Carvalho",
       "stack": "Back-end",
       "phone": "47994498414",
-      "image": "../../assets/img/people/Photo-01.png"
+      "image": "https://i.imgur.com/0LIvhYw.png"
     },
     {
       "id": 8,
       "name": "Ormar A. Amaral",
       "stack": "Front-end",
       "phone": "81998741244",
-      "image": "../../assets/img/people/Photo-05.png"
+      "image": "https://i.imgur.com/lmfasJR.png"
     },
     {
       "id":9,
       "name": "João Pedro Farias",
       "stack": "Front-end",
       "phone": "84912121212",
-      "image": "../../assets/img/people/Photo-09.png"
+      "image": "https://i.imgur.com/E93ERUl.png"
     },
     {
       "id": 10,
       "name": "Caroline Rocha da Silva",
       "stack": "Back-end",
       "phone": "84999995555",
-      "image": "../../assets/img/people/Photo-02.png"
+      "image": "https://i.imgur.com/U7puJZf.png"
     }
   ]
 }
