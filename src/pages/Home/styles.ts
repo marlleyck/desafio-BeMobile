@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { globalTheme } from '../../globalTheme';
 
-export const Container = styled.ScrollView`
+export const Container = styled.Pressable`
     width: 100%;
     height: 100%;
 
