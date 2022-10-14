@@ -1,12 +1,12 @@
 import styled from "styled-components/native";
-import { globalColors } from "../../globalColors";
+import { globalTheme } from "../../globalTheme";
 
 export const Container = styled.View`
     width: 100%;
     height: 80px;
     padding-left: 20px;
 
-    background-color: ${globalColors.COLORS.BLACK};
+    background-color: ${globalTheme.COLORS.BLACK};
     margin-top: 29px;
 
     display: flex;
