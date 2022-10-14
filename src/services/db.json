@@ -1,19 +1,74 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Giovana L. Arruda",
+      "stack": "Front-end",
+      "phone": "84996548874",
+      "image": "../../assets/img/people/Photo-12.png"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Vanessa Machado",
+      "stack": "Back-end",
+      "phone": "21894458577",
+      "image": "../../assets/img/people/Photo-10.png"
+    },
+    {
+      "id": 3,
+      "name": "Juliana Borba",
+      "stack": "Front-end",
+      "phone": "8388563598",
+      "image": "../../assets/img/people/Photo-04.png"
+    },
+    {
+      "id": 4,
+      "name": "Josiane Dias",
+      "stack": "Back-end",
+      "phone": "84998742591",
+      "image": "../../assets/img/people/Photo-08.png"
+    },
+    {
+      "id": 5,
+      "name": "Reginaldo Felipe",
+      "stack": "Back-end",
+      "phone": "11994549875",
+      "image": "../../assets/img/people/Photo-07.png"
+    },
+    {
+      "id": 6,
+      "name": "Grabriel D.",
+      "stack": "Front-end",
+      "phone": "21996211159",
+      "image": "../../assets/img/people/Photo-06.png"
+    },
+    {
+      "id": 7,
+      "name": "Silvio de Carvalho",
+      "stack": "Back-end",
+      "phone": "47994498414",
+      "image": "../../assets/img/people/Photo-01.png"
+    },
+    {
+      "id": 8,
+      "name": "Ormar A. Amaral",
+      "stack": "Front-end",
+      "phone": "81998741244",
+      "image": "../../assets/img/people/Photo-05.png"
+    },
+    {
+      "id":9,
+      "name": "João Pedro Farias",
+      "stack": "Front-end",
+      "phone": "84912121212",
+      "image": "../../assets/img/people/Photo-09.png"
+    },
+    {
+      "id": 10,
+      "name": "Caroline Rocha da Silva",
+      "stack": "Back-end",
+      "phone": "84999995555",
+      "image": "../../assets/img/people/Photo-02.png"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
