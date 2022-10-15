@@ -6,7 +6,6 @@ export const Container = styled.View`
     height: 100px;
     position: relative;
 
-    display: flex;
     align-items: center;
 `
 

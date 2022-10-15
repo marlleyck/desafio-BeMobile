@@ -9,13 +9,11 @@ export const Container = styled.View`
     background-color: ${globalTheme.COLORS.BLACK};
     margin-top: 29px;
 
-    display: flex;
     align-items: flex-start;
     justify-content: center;
 `
 
 export const LogoContainer = styled.View`
-    display: flex;
     align-items: center;
     justify-content: center;
 `
