@@ -8,7 +8,8 @@ export const globalTheme = {
         WHITE: '#FFFFFF'
     },
     FONTS: {
-        Roboto_500Medium: 'Roboto_500Medium'
+        Roboto_500Medium: 'Roboto_500Medium',
+        Roboto_400Regular: 'Roboto_400Regular'
     }
 };
 
