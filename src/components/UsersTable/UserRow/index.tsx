@@ -2,7 +2,12 @@ import { useState } from 'react';
 
 import { MoreInfo } from './MoreInfo';
 
-import {Container, Content, UserImage, UserName, ArrowDown} from './styles';
+import {
+    ContainerUserInfos, 
+    Content, 
+    UserImage, 
+    UserName, 
+    Arrow} from './styles';
 
 type UserRowType = {
     userName: string;
@@ -12,27 +17,32 @@ type UserRowType = {
 export const UserRow = ({userImage, userName}: UserRowType) => {
     const [ moreInfoPressed, setMoreInfoPressed ] = useState(false);
 
+    const arrows = [
+        require('../../../../assets/img/arrowdown.png'),
+        require('../../../../assets/img/arrowup.png')
+    ]
+
     const handleShowMoreInfo = () => {
-        setMoreInfoPressed(true)
-        console.log('clicou')
+        setMoreInfoPressed((state) => !state)
     }
 
     return (
         <>
-            <Container
+            <ContainerUserInfos
             onPress={handleShowMoreInfo}
             >
                 <Content>
                     <UserImage source={{uri: `${userImage}`}} />
                     <UserName>{userName}</UserName>
-                    <ArrowDown 
-                    source={require('../../../../assets/img/arrowdown.png')} />
+                    <Arrow 
+                    source={moreInfoPressed ? arrows[1] : arrows[0]} />
                 </Content>
-            </Container>
+            </ContainerUserInfos>
 
             {moreInfoPressed 
             ? <MoreInfo userImage={userImage} userName={userName} />
             : null }
+
         </>
 
     );

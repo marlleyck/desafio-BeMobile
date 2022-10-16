@@ -1,4 +1,4 @@
-import {Container, Name} from './styles';
+import {ContainerUserMoreInfo, CargoContainer, CargoTitle, Cargo} from './styles';
 
 type MoreInfoType = {
     userName: string;
@@ -7,8 +7,12 @@ type MoreInfoType = {
 
 export const MoreInfo = ({userName, userImage}: MoreInfoType) => {
     return (
-        <Container>
-            <Name>{userName}</Name>
-        </Container>
+        <ContainerUserMoreInfo>
+            <CargoContainer>
+                <CargoTitle>Cargo</CargoTitle>
+                <Cargo>{userName}</Cargo>
+            </CargoContainer>
+
+        </ContainerUserMoreInfo>
     );
 }

@@ -1,8 +1,16 @@
 import styled from "styled-components/native";
 import { globalTheme } from "../../../globalTheme";
 
-export const Container = styled.TouchableOpacity`
+export const ContainerUserInfos = styled.TouchableOpacity`
     height: 60px;
+`
+
+export const ContainerUserMoreInfos = styled.View`
+    height: 60px;
+
+    background-color: ${globalTheme.COLORS.WHITE};
+    
+    align-items: center;
 `
 
 export const Content = styled.View.attrs({
@@ -19,8 +27,9 @@ export const Content = styled.View.attrs({
     flex: 1;
 
     background-color: ${globalTheme.COLORS.WHITE};
-
 `
+
+
 export const UserName = styled.Text`
     font-family: ${globalTheme.FONTS.Roboto_400Regular};
     font-size: 16px;
@@ -33,6 +42,6 @@ export const UserImage = styled.Image`
     border-radius: 50px;
 `
 
-export const ArrowDown = styled.Image`
+export const Arrow = styled.Image`
     width: 20px;
 `
