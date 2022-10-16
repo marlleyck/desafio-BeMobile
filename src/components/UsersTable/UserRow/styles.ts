@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { globalTheme } from "../../globalTheme";
+import { globalTheme } from "../../../globalTheme";
 
 export const Container = styled.View`
     height: 60px;

@@ -11,7 +11,7 @@ export const UserRow = ({userImage, userName}: UserRowType) => {
             <Content>
                 <UserImage source={{uri: `${userImage}`}} />
                 <UserName>{userName}</UserName>
-                <ArrowDown source={require('../../../assets/img/arrowdown.png')} />
+                <ArrowDown source={require('../../../../assets/img/arrowdown.png')} />
             </Content>
         </Container>
     );

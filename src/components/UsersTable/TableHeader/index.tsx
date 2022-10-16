@@ -6,7 +6,7 @@ export const TableHeader = () => {
             <Foto>Foto</Foto>
             <Nome>Nome</Nome>
             <ContainerPoint>
-               <Point source={require('../../../assets/img/point.png')} />
+               <Point source={require('../../../../assets/img/point.png')} />
             </ContainerPoint>
         </Container>
     );

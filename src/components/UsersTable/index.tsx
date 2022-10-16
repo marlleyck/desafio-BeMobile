@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
 
-import { TableHeader } from '../TableHeader';
-import { UserRow } from '../UserRow';
+import { TableHeader } from './TableHeader';
+import { TableMain } from './TableMain';
 
 import { UserType } from '../../types/userType';
-
-import {FlatList} from './styles';
-import { TableMain } from '../TableMain';
 
 
 export const UsersTable = () => {

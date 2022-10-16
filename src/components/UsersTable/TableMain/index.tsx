@@ -1,4 +1,4 @@
-import { UserType } from "../../types/userType";
+import { UserType } from "../../../types/userType";
 import { UserRow } from "../UserRow";
 
 import {FlatList} from './styles';
