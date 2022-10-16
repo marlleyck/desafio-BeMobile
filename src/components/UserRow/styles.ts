@@ -1,11 +1,11 @@
 import styled from "styled-components/native";
 import { globalTheme } from "../../globalTheme";
 
-export const Content = styled.View`
+export const Container = styled.View`
     height: 9%;
 `
 
-export const Container = styled.View`
+export const Content = styled.View`
     align-items: center;
     justify-content: center;
     flex-direction: row;

@@ -8,11 +8,11 @@ type UserRowType = {
 
 export const UserRow = ({userImage, userName}: UserRowType) => {
     return (
-        <Content>
-            <Container>
+        <Container>
+            <Content>
                 <UserImage source={{uri: `${userImage}`}} />
                 <UserName>{userName}</UserName>
-            </Container>
-        </Content>
+            </Content>
+        </Container>
     );
 }
