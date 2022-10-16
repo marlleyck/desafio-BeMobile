@@ -20,6 +20,7 @@ export const Foto = styled.Text`
     font-size: 16px;
     text-transform: uppercase;
     color: ${globalTheme.COLORS.WHITE};
+    flex: 1;
 `
 
 export const Nome = styled.Text`
@@ -27,6 +28,13 @@ export const Nome = styled.Text`
     font-size: 16px;
     text-transform: uppercase;
     color: ${globalTheme.COLORS.WHITE};
+    flex: 1;
+    text-align: center;
+`
+
+export const ContainerPoint = styled.View`
+    flex: 1;
+    align-items: flex-end;
 `
 
 export const Point = styled.Image``
