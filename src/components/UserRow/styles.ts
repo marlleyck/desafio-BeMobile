@@ -2,18 +2,21 @@ import styled from "styled-components/native";
 import { globalTheme } from "../../globalTheme";
 
 export const Container = styled.View`
-    height: 9%;
+    height: 60px;
 `
 
-export const Content = styled.View`
+export const Content = styled.View.attrs({
+    borderBottomColor: "black",
+    borderBottomWidth: 0.4
+})`
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
 
     width: 355px;
     height: 80px;
-
-    border: 0.4px solid gray;
+    padding: 0 15px;
+    flex: 1;
 
     background-color: ${globalTheme.COLORS.WHITE};
 
@@ -28,4 +31,8 @@ export const UserImage = styled.Image`
     height: 25px;
 
     border-radius: 50px;
+`
+
+export const ArrowDown = styled.Image`
+    width: 20px;
 `
