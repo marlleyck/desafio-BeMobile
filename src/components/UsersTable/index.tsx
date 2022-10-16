@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
-import { Text} from 'react-native';
 
 import { TableHeader } from '../TableHeader';
 import { UserRow } from '../UserRow';
 
 import { UserType } from '../../types/userType';
 
-import {Container, FlatList, ListContainer, UsersContainer} from './styles';
+import {FlatList} from './styles';
+import { TableMain } from '../TableMain';
 
 
 export const UsersTable = () => {
@@ -17,7 +17,6 @@ export const UsersTable = () => {
         const fetchApi = async () => {
             const response = await api.get('/users')
             let list = response.data.map((user: UserType) => {
-                console.log(user.image)
                 return user
             })
             setUsers(list)
@@ -26,19 +25,9 @@ export const UsersTable = () => {
     }, [])
 
     return (
-        <Container>
+        <>
            <TableHeader />
-           <ListContainer>
-                <FlatList
-                data={users}
-                keyExtractor={(item: UserType) => item.id}
-                renderItem={({item}: {item: UserType}) => 
-                    <UsersContainer>
-                        <UserRow userImage={item.image} userName={item.name} />
-                    </UsersContainer>
-                }
-                />
-           </ListContainer>
-        </Container>
+           <TableMain users={users} />
+        </>
     );
 }

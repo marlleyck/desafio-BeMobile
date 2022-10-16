@@ -1,4 +1,5 @@
-import {Container, UserImage, UserName} from './styles';
+import {Container, Content, UserImage, UserName} from './styles';
+
 
 type UserRowType = {
     userName: string;
@@ -7,9 +8,11 @@ type UserRowType = {
 
 export const UserRow = ({userImage, userName}: UserRowType) => {
     return (
-        <Container>
-            <UserName>{userName}</UserName>
-            <UserImage source={{uri: `${userImage}`}} />
-        </Container>
+        <Content>
+            <Container>
+                <UserImage source={{uri: `${userImage}`}} />
+                <UserName>{userName}</UserName>
+            </Container>
+        </Content>
     );
 }
