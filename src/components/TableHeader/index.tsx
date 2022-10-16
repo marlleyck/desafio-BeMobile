@@ -1,9 +1,11 @@
-import {ImageTableHeader} from './styles';
+import {Container, Foto, Nome, Point} from './styles';
 
 export const TableHeader = () => {
     return (
-        <>
-            <ImageTableHeader source={require('../../../assets/img/tableheader.png')} />
-        </>
+        <Container>
+            <Foto>Foto</Foto>
+            <Nome>Nome</Nome>
+            <Point source={require('../../../assets/img/point.png')} />
+        </Container>
     );
 }
