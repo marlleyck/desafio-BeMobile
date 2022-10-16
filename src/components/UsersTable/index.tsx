@@ -4,6 +4,8 @@ import { api } from '../../services/api';
 import { TableHeader } from './TableHeader';
 import { TableMain } from './TableMain';
 
+import * as Animatable from 'react-native-animatable';
+
 import { UserType } from '../../types/userType';
 
 
@@ -23,8 +25,15 @@ export const UsersTable = () => {
 
     return (
         <>
-           <TableHeader />
-           <TableMain users={users} />
+            <Animatable.View
+            animation="fadeInRight">
+                <TableHeader />
+            </Animatable.View>
+
+            <Animatable.View
+            animation="fadeInRight">
+                <TableMain users={users} />
+            </Animatable.View>
         </>
     );
 }

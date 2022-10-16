@@ -1,5 +1,6 @@
 import {Container, SearchInput, SearchIcon} from './styles';
 
+
 export const SearchArea = () => {
     return (
         <Container>
