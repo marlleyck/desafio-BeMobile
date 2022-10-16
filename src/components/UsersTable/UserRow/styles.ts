@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import { globalTheme } from "../../../globalTheme";
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
     height: 60px;
 `
 

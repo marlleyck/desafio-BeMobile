@@ -31,7 +31,8 @@ export const UsersTable = () => {
             </Animatable.View>
 
             <Animatable.View
-            animation="fadeInRight">
+            animation="fadeInRight"
+            style={{flex: 1}}> 
                 <TableMain users={users} />
             </Animatable.View>
         </>
