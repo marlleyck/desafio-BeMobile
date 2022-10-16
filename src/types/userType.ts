@@ -4,4 +4,5 @@ export type UserType = {
     stack: string;
     phone: string;
     image: string;
+    date: string;
 }

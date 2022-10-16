@@ -6,6 +6,8 @@ import { TableMain } from './TableMain';
 
 import * as Animatable from 'react-native-animatable';
 
+import { dateRandom } from '../../utilities';
+
 import { UserType } from '../../types/userType';
 
 
@@ -16,7 +18,10 @@ export const UsersTable = () => {
         const fetchApi = async () => {
             const response = await api.get('/users')
             let list = response.data.map((user: UserType) => {
-                return user
+                return {
+                    ...user,
+                    date: dateRandom()
+                }
             })
             setUsers(list)
         }

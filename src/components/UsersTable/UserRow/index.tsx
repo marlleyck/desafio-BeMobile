@@ -9,13 +9,17 @@ import {
     UserName, 
     Arrow} from './styles';
 
-type UserRowType = {
+
+type UserRowProps = {
     userName: string;
     userImage: string;
+    userStack: string;
+    userPhone: string;
+    userDate: any;
 }
 
-export const UserRow = ({userImage, userName}: UserRowType) => {
-    const [ moreInfoPressed, setMoreInfoPressed ] = useState(false);
+export const UserRow = ({userImage, userName, userStack, userPhone, userDate}: UserRowProps) => {
+    const [ moreInfoPressed, setMoreInfoPressed ] = useState(false)
 
     const arrows = [
         require('../../../../assets/img/arrowdown.png'),
@@ -40,7 +44,11 @@ export const UserRow = ({userImage, userName}: UserRowType) => {
             </ContainerUserInfos>
 
             {moreInfoPressed 
-            ? <MoreInfo userImage={userImage} userName={userName} />
+            ? <MoreInfo 
+            userImage={userImage} 
+            userName={userName}
+            userStack={userStack}
+            userDate={userDate} />
             : null }
 
         </>

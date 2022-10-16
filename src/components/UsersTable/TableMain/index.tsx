@@ -12,7 +12,13 @@ export const TableMain = ({users}: TableMainProps) => {
         <FlatList
         data={users}
         keyExtractor={(item: UserType) => item.id}
-        renderItem={({item}: {item: UserType}) => <UserRow userName={item.name} userImage={item.image} /> }
+        renderItem={({item}: {item: UserType}) => 
+        <UserRow 
+        userName={item.name} 
+        userImage={item.image}
+        userDate={item.date} 
+        userStack={item.stack}
+        userPhone={item.phone} /> }
         />
     );
 }

@@ -11,6 +11,7 @@ export const ContainerUserMoreInfo = styled.View`
 
 export const CargoContainer = styled.View`
     width: 355px;
+    padding: 0 15px;
 
     align-items: center;
     justify-content: space-between;
