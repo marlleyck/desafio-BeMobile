@@ -42,7 +42,7 @@ export const AppContextProvider = ({children}: AppContextProps) => {
         fetchApi()
     }, [])
 
-    //Search
+    //Função que filtra a lista de usuários de acordo com a pesquisa do input
     useEffect(() => {
         if (users != undefined) {
             if (searchText === '') {

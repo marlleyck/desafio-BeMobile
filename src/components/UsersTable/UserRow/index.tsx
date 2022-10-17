@@ -17,7 +17,7 @@ type UserRowProps = {
     userImage: string;
     userStack: string;
     userPhone: string;
-    userDate: any;
+    userDate: string;
 }
 
 export const UserRow = ({userImage, userName, userStack, userPhone, userDate}: UserRowProps) => {

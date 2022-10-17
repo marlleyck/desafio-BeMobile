@@ -15,7 +15,7 @@ export const Container = styled.View`
     flex-direction: row;
 `
 
-export const Foto = styled.Text`
+export const PhotoText = styled.Text`
     font-family: ${globalTheme.FONTS.Roboto_500Medium};
     font-size: 16px;
     text-transform: uppercase;
@@ -23,7 +23,7 @@ export const Foto = styled.Text`
     flex: 1;
 `
 
-export const Nome = styled.Text`
+export const NameText = styled.Text`
     font-family: ${globalTheme.FONTS.Roboto_500Medium};
     font-size: 16px;
     text-transform: uppercase;
