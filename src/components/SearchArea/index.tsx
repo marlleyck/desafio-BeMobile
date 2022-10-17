@@ -1,7 +1,11 @@
+
+import { useContext } from 'react';
+import {AppContext} from '../../contexts/AppContext';
+
 import {Container, SearchInput, SearchIcon} from './styles';
 
-
 export const SearchArea = () => {
+    const context = useContext(AppContext)
     return (
         <Container>
             <SearchInput />
