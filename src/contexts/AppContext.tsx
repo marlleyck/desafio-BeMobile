@@ -12,13 +12,18 @@ type AppContextProps = {
 type AppContextType = {
     users: UserType[] | undefined;
     setUsers: (newState: UserType[]) => void;
+    filteredUsers: UserType[] | undefined;
+    setFilteredUsers: (newState: UserType[] | undefined) => void;
 }
 
 export const AppContext = createContext<AppContextType>({} as AppContextType);
 
 export const AppContextProvider = ({children}: AppContextProps) => {
     const [users, setUsers] = useState<UserType[] | undefined>()
+    const [filteredUsers, setFilteredUsers] = useState<UserType[]>()
 
+    
+    //Chamada da API e obtenção dos usuários
     useEffect(() => {
         const fetchApi = async () => {
             const response = await api.get('/users')
@@ -33,8 +38,11 @@ export const AppContextProvider = ({children}: AppContextProps) => {
         fetchApi()
     }, [])
 
+    //Chamada da API e obtenção dos usuários
+
+
     return (
-        <AppContext.Provider value={{users, setUsers}}>
+        <AppContext.Provider value={{users, setUsers, filteredUsers, setFilteredUsers}}>
             {children}
         </AppContext.Provider>
     )

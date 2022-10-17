@@ -1,16 +1,16 @@
+import { useContext } from "react";
+import { AppContext } from "../../../contexts/AppContext";
 import { UserType } from "../../../types/userType";
 import { UserRow } from "../UserRow";
 
 import {FlatList} from './styles';
 
-type TableMainProps = {
-    users: UserType[] | undefined;
-}
+export const TableMain = () => {
+    const {filteredUsers} = useContext(AppContext)
 
-export const TableMain = ({users}: TableMainProps) => {
     return (
         <FlatList
-        data={users}
+        data={filteredUsers}
         keyExtractor={(item: UserType) => item.id}
         renderItem={({item}: {item: UserType}) => 
         <UserRow 
