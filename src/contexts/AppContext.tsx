@@ -14,13 +14,16 @@ type AppContextType = {
     setUsers: (newState: UserType[]) => void;
     filteredUsers: UserType[] | undefined;
     setFilteredUsers: (newState: UserType[] | undefined) => void;
+    setSearchText: (newState: string) => void;
 }
 
 export const AppContext = createContext<AppContextType>({} as AppContextType);
 
 export const AppContextProvider = ({children}: AppContextProps) => {
     const [users, setUsers] = useState<UserType[] | undefined>()
+    const [apiArrived, setApiArrived] = useState(false)
     const [filteredUsers, setFilteredUsers] = useState<UserType[]>()
+    const [searchText, setSearchText] = useState('')
 
     
     //Chamada da API e obtenção dos usuários
@@ -34,15 +37,35 @@ export const AppContextProvider = ({children}: AppContextProps) => {
                 }
             })
             setUsers(list)
+            setApiArrived(true)
         }
         fetchApi()
     }, [])
 
-    //Chamada da API e obtenção dos usuários
+    //Search
+    useEffect(() => {
+        if (users != undefined) {
+            if (searchText === '') {
+                setFilteredUsers(users)
+            } else {
+                setFilteredUsers(
+                    users?.filter((item) => {
+                        if (item.name.indexOf(searchText) > -1 
+                        || item.stack.indexOf(searchText) > -1 
+                        || item.phone.indexOf(searchText) > -1) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    })
+                )
+            }
+        }
+    }, [searchText, apiArrived])
 
 
     return (
-        <AppContext.Provider value={{users, setUsers, filteredUsers, setFilteredUsers}}>
+        <AppContext.Provider value={{users, setUsers, filteredUsers, setFilteredUsers, setSearchText}}>
             {children}
         </AppContext.Provider>
     )
