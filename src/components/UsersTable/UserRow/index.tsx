@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import { MoreInfo } from './MoreInfo';
 
+import { formatPhone } from '../../../utilities';
+
 import {
     ContainerUserInfos, 
     Content, 
@@ -20,6 +22,7 @@ type UserRowProps = {
 
 export const UserRow = ({userImage, userName, userStack, userPhone, userDate}: UserRowProps) => {
     const [ moreInfoPressed, setMoreInfoPressed ] = useState(false)
+    const [userPhoneFormat, setUserPhoneFormat] = useState('')
 
     const arrows = [
         require('../../../../assets/img/arrowdown.png'),
@@ -28,6 +31,9 @@ export const UserRow = ({userImage, userName, userStack, userPhone, userDate}: U
 
     const handleShowMoreInfo = () => {
         setMoreInfoPressed((state) => !state)
+        let phoneFormat = formatPhone(userPhone)
+        setUserPhoneFormat(phoneFormat)
+
     }
 
     return (
@@ -45,9 +51,8 @@ export const UserRow = ({userImage, userName, userStack, userPhone, userDate}: U
 
             {moreInfoPressed 
             ? <MoreInfo 
-            userImage={userImage} 
-            userName={userName}
             userStack={userStack}
+            userPhone={userPhoneFormat}
             userDate={userDate} />
             : null }
 

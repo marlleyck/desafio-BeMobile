@@ -11,3 +11,11 @@ export function dateRandom () {
 
     return `${day}/${month}/${year}`
 }
+
+export function formatPhone(phone: string) {
+    const DDD = phone.substring(0, 2)
+    const numberFirstPart = phone.substring(2, 7)
+    const numberLastPart = phone.substring(7, 11)
+
+    return `(${DDD}) ${numberFirstPart}-${numberLastPart}`
+}
