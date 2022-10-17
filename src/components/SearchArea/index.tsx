@@ -2,6 +2,8 @@
 import { useContext, useState, useEffect } from 'react';
 import {AppContext} from '../../contexts/AppContext';
 
+import { capitalizeString } from '../../utilities';
+
 import {Container, SearchInput, SearchIcon} from './styles';
 
 export const SearchArea = () => {
@@ -29,7 +31,7 @@ export const SearchArea = () => {
     return (
         <Container>
             <SearchInput
-            onChangeText={(text: string) => setSearchText(text)} />
+            onChangeText={(text: string) => setSearchText(capitalizeString(text))} />
             <SearchIcon source={require('../../../assets/img/search.png')} />
         </Container>
     );

@@ -20,3 +20,9 @@ export function formatPhone(phone: string) {
 
     return `+${COUNTRY} (${DDD}) ${numberFirstPart}-${numberLastPart}`
 }
+
+export function capitalizeString(text: string) {
+    const textCapitalized = text.charAt(0).toUpperCase() + text.slice(1)
+    
+    return textCapitalized
+}
