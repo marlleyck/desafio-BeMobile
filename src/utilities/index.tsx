@@ -13,9 +13,10 @@ export function dateRandom () {
 }
 
 export function formatPhone(phone: string) {
-    const DDD = phone.substring(0, 2)
-    const numberFirstPart = phone.substring(2, 7)
-    const numberLastPart = phone.substring(7, 11)
+    const COUNTRY = phone.substring(0, 2)
+    const DDD = phone.substring(2, 4)
+    const numberFirstPart = phone.substring(4, 9)
+    const numberLastPart = phone.substring(9, 13)
 
-    return `(${DDD}) ${numberFirstPart}-${numberLastPart}`
+    return `+${COUNTRY} (${DDD}) ${numberFirstPart}-${numberLastPart}`
 }
