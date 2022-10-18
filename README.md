@@ -46,13 +46,13 @@
 <pre>Linux: <strong>$ hostname -I</strong></pre>
 <pre>MacOs: <strong>$ ipconfig getifaddr en0</strong></pre>
 
-<p align="center">Após mudar o <strong>'IP'</strong> em <strong>'src/services/api.js'</strong>, vá até <strong>'package.json'</strong>, depois procure na área <strong>'scripts'</strong> -> <strong>'server'</strong> e troque para o seu IpLocal lá também</p>
+<p align="center">Após mudar o <strong>'IP'</strong> em <strong>'src/services/api.js'</strong>, vá até <strong>'package.json'</strong>, depois procure na área <strong>'scripts'</strong> -> <strong>'database'</strong> e troque para o seu IpLocal lá também</p>
 
 <br />
 
 <p align="center">Por fim, basta iniciar o servidor, usando</p>
-<pre><strong>$ npm run server</strong></pre>
-<pre><strong>$ yarn server</strong></pre>
+<pre><strong>$ npm run database</strong></pre>
+<pre><strong>$ yarn database</strong></pre>
 
 <p align="center">E iniciar o projeto</p>
 <pre><strong>$ expo start</strong></pre>
