@@ -37,6 +37,9 @@
 <pre><strong>$ yarn</strong></pre>
 <pre><strong>$ expo install</strong></pre>
 
+<p align="center">Instale o expo-cli globamente</p>
+<pre><strong>$ npm install --global expo-cli</strong></pre>
+
 <p align="center">Para quem vem do ReactJs pode não saber, mas o React Native não reconhece o famoso <strong>localhost</strong>, então, temos que configurar nosso json-server com o nosso IPLocal e a porta de sua preferência. Para isso, vá até <strong>'src/services/api.js'</strong> e mude o <strong>'IP'</strong> para seu IPLocal</p>
 <p align="center">Não sabe qual seu IP Local? Tudo bem!</p>
 <pre>Windows: <strong>$ ipconfig</strong></pre>
@@ -50,3 +53,7 @@
 <p align="center">Por fim, basta iniciar o servidor, usando</p>
 <pre><strong>$ npm run server</strong></pre>
 <pre><strong>$ yarn server</strong></pre>
+
+<p align="center">E iniciar o projeto</p>
+<pre><strong>$ expo start</strong></pre>
+
