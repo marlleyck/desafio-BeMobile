@@ -24,36 +24,35 @@ export const UserRow = ({userImage, userName, userStack, userPhone, userDate}: U
     const [ moreInfoPressed, setMoreInfoPressed ] = useState(false)
     const [userPhoneFormat, setUserPhoneFormat] = useState('')
 
-    const arrows = [
-        require('../../../../assets/img/arrowdown.png'),
-        require('../../../../assets/img/arrowup.png')
-    ]
+    const arrows = {
+        down: require('../../../../assets/img/arrowdown.png'),
+        up: require('../../../../assets/img/arrowup.png')
+    }
 
     const handleShowMoreInfo = () => {
         setMoreInfoPressed((state) => !state)
-        let phoneFormat = formatPhone(userPhone)
+        const phoneFormat = formatPhone(userPhone)
         setUserPhoneFormat(phoneFormat)
 
     }
 
     return (
         <>
-            <ContainerUserInfos
-            onPress={handleShowMoreInfo}
-            >
+            <ContainerUserInfos onPress={handleShowMoreInfo}>
                 <Content>
                     <UserImage source={{uri: `${userImage}`}} />
                     <UserName>{userName}</UserName>
                     <Arrow 
-                    source={moreInfoPressed ? arrows[1] : arrows[0]} />
+                    source={moreInfoPressed ? arrows.up : arrows.down} />
                 </Content>
             </ContainerUserInfos>
 
-            {moreInfoPressed 
-            ? <MoreInfo 
-            userStack={userStack}
-            userPhone={userPhoneFormat}
-            userDate={userDate} />
+            {moreInfoPressed ? 
+                <MoreInfo 
+                    userStack={userStack}
+                    userPhone={userPhoneFormat}
+                    userDate={userDate} 
+                />
             : null }
 
         </>

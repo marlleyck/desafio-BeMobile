@@ -9,10 +9,15 @@ import {Container, SearchInput, SearchIcon} from './styles';
 export const SearchArea = () => {
     const {setSearchText} = useContext(AppContext)
 
+    const handleSetSearchText = (text: string) => {
+        const capitalizedString = capitalizeString(text)
+        setSearchText(capitalizedString)
+    }
+
     return (
         <Container>
             <SearchInput
-            onChangeText={(text: string) => setSearchText(capitalizeString(text))} />
+            onChangeText={handleSetSearchText} />
             <SearchIcon source={require('../../../assets/img/search.png')} />
         </Container>
     );
