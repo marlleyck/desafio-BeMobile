@@ -27,9 +27,26 @@
 
 <h1 align="center">:rocket: Executando o Projeto</h1>
 <p align="center">Comece clonando o repositório para sua máquina, usando</p>
-<pre>$ git clone https://github.com/marlleyck/desafio-BeMobile/tree/master</pre>
+<pre><strong>$ git clone https://github.com/marlleyck/desafio-BeMobile/tree/master</strong></pre>
+
+<p align="center">Após isso, vá até a pasta do projeto</p>
+<pre><strong>$ cd desafio-BeMobile</strong></pre>
 
 <p align="center">Instale todas as dependências, usando o seu gerenciador de pacotes preferido</p>
-<pre>$ npm install</pre>
-<pre>$ yarn</pre>
-<pre>$ expo install</pre>
+<pre><strong>$ npm install</strong></pre>
+<pre><strong>$ yarn</strong></pre>
+<pre><strong>$ expo install</strong></pre>
+
+<p align="center">Para quem vem do ReactJs pode não saber, mas o React Native não reconhece o famoso <strong>localhost</strong>, então, temos que configurar nosso json-server com o nosso IPLocal e a porta de sua preferência. Para isso, vá até <strong>'src/services/api.js'</strong> e mude o <strong>'IP'</strong> para seu IPLocal</p>
+<p align="center">Não sabe qual seu IP Local? Tudo bem!</p>
+<pre>Windows: <strong>$ ipconfig</strong></pre>
+<pre>Linux: <strong>$ hostname -I</strong></pre>
+<pre>MacOs: <strong>$ ipconfig getifaddr en0</strong></pre>
+
+<p align="center">Após mudar o <strong>'IP'</strong> em <strong>'src/services/api.js'</strong>, vá até <strong>'package.json'</strong>, depois procure na área <strong>'scripts'</strong> -> <strong>'server'</strong> e troque para o seu IpLocal lá também</p>
+
+<br />
+
+<p align="center">Por fim, basta iniciar o servidor, usando</p>
+<pre><strong>$ npm run server</strong></pre>
+<pre><strong>$ yarn server</strong></pre>
