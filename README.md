@@ -35,7 +35,6 @@
 <p align="center">Instale todas as dependências, usando o seu gerenciador de pacotes preferido</p>
 <pre><strong>$ npm install</strong></pre>
 <pre><strong>$ yarn</strong></pre>
-<pre><strong>$ expo install</strong></pre>
 
 <p align="center">Instale o expo-cli globamente</p>
 <pre><strong>$ npm install --global expo-cli</strong></pre>
