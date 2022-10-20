@@ -56,3 +56,4 @@
 <p align="center">E iniciar o projeto</p>
 <pre><strong>$ expo start</strong></pre>
 
+<p align="center">Após iniciar o projeto, baixe o Expo Go no seu smartphone e abra-o. Após isso escaneie o QRCode que aparece no seu terminal e feito! O projeto está pronto para ser utilizado!</p>
