@@ -27,7 +27,7 @@
 
 <h1 align="center">:rocket: Executando o Projeto</h1>
 <p align="center">Comece clonando o repositório para sua máquina, usando</p>
-<pre><strong>$ git clone https://github.com/marlleyck/desafio-BeMobile/tree/master</strong></pre>
+<pre><strong>$ git clone https://github.com/marlleyck/desafio-BeMobile</strong></pre>
 
 <p align="center">Após isso, vá até a pasta do projeto</p>
 <pre><strong>$ cd desafio-BeMobile</strong></pre>
